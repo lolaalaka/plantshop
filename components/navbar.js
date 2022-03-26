@@ -1,7 +1,7 @@
 import styles from "../styles/navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/logo.png";
+import logo from "../public/Logo.png";
 import ham from "../public/hamburger.png";
 import nightmode from "../public/subtract.png";
 import { useState , useEffect, useRef} from "react";

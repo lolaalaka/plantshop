@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar";
 import styles from "../styles/service.module.scss";
-import bottomImage from "../public/bottom.png"
+import bottomImage from "../public/Bottom.png"
 import button from "../public/Button.png"
 import Image from "next/image";
 

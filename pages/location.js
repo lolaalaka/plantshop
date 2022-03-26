@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar"
 import styles from "../styles/location.module.scss"
 import Image from "next/image";
-import bottomImage from "../public/bottom.png";
+import bottomImage from "../public/Bottom.png";
 import button from "../public/Button2.png"
 
 
