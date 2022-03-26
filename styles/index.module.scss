@@ -1,0 +1,129 @@
+@import "_mixins";
+
+.background {
+  background-image: url("../public/Background.png");
+  @include background;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100vw;
+  height: fit-content;
+}
+
+.lets {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: $white;
+  padding-top: 80px;
+}
+
+.plant {
+  color: $mint-green;
+}
+
+.add {
+  text-align: center;
+  color: $white;
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 20px;
+  margin: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.btn {
+  background-color: $trans-black;
+  font-size: 12px;
+  border-radius: 20px;
+  border: 1px solid $offwhite;
+  outline: none;
+  padding: 5px 10px;
+  margin: 30px auto 0 auto;
+  display: block;
+  color: $offwhite;
+}
+
+
+.plantsCon {
+  margin: 70px auto 0 auto;
+  padding-bottom: 50px;
+  width: fit-content;
+  gap: 30px;
+  display: flex;
+
+  @include bp(phone) {
+        margin: 70px auto 0 auto;
+        padding-bottom: 30px;
+        display: grid;
+        gap: 50px;
+    
+        grid-template-areas:
+          "plant1 plant2"
+          "plant3 plant4";
+      }
+    
+      @include bp(smallerPhones) {
+        display: grid;
+        margin: 70px auto 0 auto;
+        padding-bottom: 30px;
+        gap: 50px;
+        grid-template-areas:
+          "plant1 plant2"
+          "plant3 plant4";
+      }
+}
+
+.servicebtn {
+  background-color: $dark-green;
+  font-size: 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 8px 30px;
+  margin: 30px auto 30px auto;
+  display: block;
+  box-shadow: 4px 5px 5px rgba(128, 128, 128, 0.692);
+  color: $offwhite;
+}
+
+.get {
+  font-size: 12px;
+  color: $mint-green;
+  text-align: center;
+  font-weight: 800;
+}
+
+.configure {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 20px;
+  margin: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.types {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: $dark-green;
+  margin: 60px 0;
+}
+
+.lowerCon{
+  display: flex;
+
+  @include bp(smallerPhones){
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include bp(phones){
+    display: block;
+   margin: 0 auto;
+  }
+}

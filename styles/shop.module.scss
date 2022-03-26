@@ -1,0 +1,31 @@
+@import "_mixins";
+
+.background{
+    background-image: url("../public/Background1.png");
+    @include background;
+}
+
+.lets {
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: $offwhite;
+    padding-top: 80px;
+  }
+  
+  .plant {
+    color: $mint-green;
+  }
+  
+  .add {
+    text-align: center;
+    color: $white;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  

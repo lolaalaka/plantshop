@@ -1,0 +1,96 @@
+@import "mixins";
+
+.navCon {
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  @include bp(phone) {
+    display: none;
+  }
+
+  @include bp(smallerPhones) {
+    display: none;
+  }
+}
+
+.navList {
+  padding: 0 25px;
+  color: white;
+}
+
+.btn {
+  background-color: $mint-green;
+  color: black;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.smallCon {
+  display: flex;
+  background-color: rgba(2, 2, 2, 0.911);
+  justify-content: space-between;
+  padding-top: 30px;
+
+  @include bp(tablet) {
+    display: none;
+  }
+
+  @include bp(desktop) {
+    display: none;
+  }
+}
+
+.hamCon {
+  margin: 0 0 25px 30px;
+  visibility: visible;
+}
+
+.hamConHide {
+  visibility: hidden;
+}
+
+.nightMode {
+  margin-right: 30px;
+}
+
+.smallNav {
+  display: none;
+}
+
+.showSmNav {
+  width: 55%;
+  height: 45%;
+  background-color: $trans-black;
+  position: fixed;
+  top: 0;
+  padding-top: 15px;
+  display: block;
+  z-index: 10;
+}
+
+.smallNavList {
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  color: $white;
+}
+
+.close {
+  position: absolute;
+  right: 9%;
+  top: 5%;
+  cursor: pointer;
+}
+
+.svg {
+  width: 20px;
+  height: 29px;
+  fill: #fff;
+  color: #fff;
+  stroke: currentColor;
+}

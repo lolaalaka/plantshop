@@ -1,0 +1,30 @@
+@import "_mixins";
+
+.background{
+    background-image: url("../public/Background1.png");
+    @include background;
+}
+
+
+.midCard{
+    background-image: url("../public/Card.png");
+    @include background;
+    width: 75vw;
+    height:70vh;
+    margin: 90px auto 0 auto;
+    position:relative;
+    z-index: 5;
+
+    @include bp(smallerPhones){
+        height: 80vh;
+        margin: 40px auto 0 auto;
+    }
+
+    @include bp(phone){
+        height: 80vh;
+        margin: 40px auto 0 auto;
+    }
+}
+
+
+

@@ -1,0 +1,68 @@
+@import "_mixins";
+
+.background{
+ background-image: url("../public/Background2.png");
+ @include background;
+}
+
+
+
+.sevenDays{
+    color:$seven-green;
+}
+
+.purpleFruit{
+    position: absolute;
+    left: 15%;
+    bottom: 100px;
+    width: 50px;
+
+    @include bp(desktop){
+        bottom: 20%;
+    }
+}
+
+.fullCon{
+    display: flex;
+
+    @include bp(tablet){
+        display: block;
+        margin-top: 100px;
+    }
+
+    @include bp(phone){
+        display: block;
+        margin-top: 100px;
+    }
+
+    @include bp(smallerPhones){
+        display: block;
+        margin-top: 100px;
+    }
+}
+
+.imagesCon{
+
+    display: flex;
+    margin: 200px 0 0 10%;
+    position: relative;
+    z-index: 5;
+    
+
+    @include bp(phone){
+        display: block;
+        padding:  200px 100px 0 100px;
+        margin: 0;
+    }
+
+    @include bp(smallerPhones){
+        display: block;
+        margin-top: 200px;
+    }
+
+}
+
+.bottomCon{
+    position: absolute;
+    bottom: -4px;
+}

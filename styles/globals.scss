@@ -1,0 +1,96 @@
+@import "_mixins";
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.service{
+  font-size: 6rem;
+  font-weight: 600;
+  color:$offwhite;
+  white-space: nowrap;
+overflow: hidden;
+
+  @include bp(tablet){
+      font-size: 3rem;
+  }
+
+  @include bp(phone){
+      font-size: 3rem;
+  }
+
+  @include bp(smallerPhones){
+      font-size: 2.5rem;
+  }
+
+}
+
+.home{
+  color: $mint-green;
+}
+
+.service-home{
+  padding: 7%;
+  margin:20px 0;
+  text-align: left;
+  
+  @include bp(smallerPhones){
+      padding: 20% 5% 10%;
+      margin: 0;
+  }
+  @include bp(desktop){
+      padding: 2% 0 0 12%;
+  } 
+}
+
+.configure{
+color: $offwhite;
+padding:0 7%;
+text-align: left;
+white-space: nowrap;
+overflow: hidden;
+@include bp(smallerPhones){
+   white-space: break-spaces;
+   min-width: 100%;
+}
+
+  @include bp(desktop){
+      padding: 2% 0 0 12%;
+  } 
+}
+
+.btn{
+
+  padding:5%;
+  
+  @include bp(smallerPhones){
+      padding:10% 0;
+      width: 70%;
+  }
+
+  @include bp(phone){
+      padding:10% 0;
+  }
+  @include bp(desktop){
+      padding:4% 10%
+  } 
+}
+
+.bottomCon{
+  position: absolute;
+  bottom: -4px;
+}
