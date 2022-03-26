@@ -5,7 +5,7 @@ import button from "../public/Button.png"
 import purplefruit from "../public/GardenerInfo.png"
 import foliage from "../public/Card-foliage.png"
 import pucculent from "../public/Card-pucculent.png"
-import bottomImage from "../public/bottom.png"
+import bottomImage from "../public/Bottom.png"
 import Link from "next/link";
 
 
